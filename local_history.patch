@@ -1,0 +1,39 @@
+Index: src/SidePanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/SidePanel.java	(revision )
++++ src/SidePanel.java	(revision )
+@@ -53,7 +53,7 @@
+ 		JLabel lblTopY = new JLabel("     Y");
+ 		panelTop.add(lblTopX);
+ 		panelTop.add(lblTopY);
+-		//myPanel.add(panelTop);
++		myPanel.add(panelTop);
+ 		tX1 = new JTextField("X1");
+ 		tX1.setPreferredSize(new Dimension(50,16));
+ 		//myPanel.add(tX1);
+@@ -65,6 +65,7 @@
+ 		panel1.add(lbl1,BorderLayout.WEST);
+ 		panel1.add(tX1);
+ 		panel1.add(tY1);
++		myPanel.add(panel1);
+ 		tX2 = new JTextField("X2");
+ 		tX2.setPreferredSize(new Dimension(50,16));
+ 		//myPanel.add(tX2);
+@@ -78,10 +79,10 @@
+ 		panel2.add(tY2);
+ 		JPanel changePanel = new JPanel();
+ 
+-		changePanel.add(panelTop);
+-		changePanel.add(panel1,BorderLayout.CENTER);
+-		changePanel.add(panel2,BorderLayout.SOUTH);
+-		myPanel.add(changePanel);
++		//changePanel.add(panelTop);
++		//changePanel.add(panel1,BorderLayout.CENTER);
++		//changePanel.add(panel2,BorderLayout.SOUTH);
++		myPanel.add(panel2);
+ 		
+ 		BChange = new JButton("Change");
+ 		BChange.setPreferredSize(new Dimension(100,16));
